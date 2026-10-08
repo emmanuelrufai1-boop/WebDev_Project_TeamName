@@ -1,0 +1,34 @@
+/* Basic Black and White Styling */
+body {
+background-color: black;
+color: white;
+font-family: "Silkscreen", sans-serif;
+text-align: center; /* Centers everything */
+padding: 20px;
+}
+
+/* Navigation Links */
+nav a {
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+
+/* Headings */
+h1 {
+color: #00ff00; /* Simple green text for the title */
+border-bottom: 2px solid #6a0dad; /* A simple purple line under the title */
+padding-bottom: 10px;
+}
+
+h2, h3 {
+color: #6a0dad; /* Purple text for smaller headings */
+}
+
+/* Images */
+img {
+width: 250px;
+height: auto;
+margin: 10px;
+border: 2px solid #6a0dad; /* Just a simple purple border */
+}
