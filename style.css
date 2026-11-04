@@ -1,34 +1,54 @@
-/* Basic Black and White Styling */
+/* Task 3: Background image  */
 body {
-background-color: black;
-color: white;
-font-family: "Silkscreen", sans-serif;
-text-align: center; /* Centers everything */
-padding: 20px;
+ font-family: Arial, sans-serif;
+ color: black;
+ 
+ /* Added CSS to add the background image */
+ background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1920&q=80');
+ 
+ /* Task 3 Requirement: Modify at least one additional background property */
+ background-size: cover; 
+ background-attachment: fixed; 
+ 
+ padding: 20px;
 }
 
-/* Navigation Links */
+/*  Task 1: Css selector  */
+/* Here is the ID Selector  */
+#welcome-title {
+ color: darkblue;
+ text-align: center;
+ border-bottom: 3px solid purple;
+}
+
+/* Here is the Class Selector */
+.featured-box {
+ /*  Task 2: css box model */
+ width: 70%; /* Width */
+ padding: 20px; /* Padding */
+ margin: 20px auto; /* Margin (auto centers it) */
+ border: 4px solid purple; /* Border */
+ 
+ background-color: rgba(255, 255, 255, 0.9); /* Tried to make my img see through so you can see the background image behind it */
+ border-radius: 10px;
+}
+
+/* Basic styling for nav and images to keep it looking nice */
+nav {
+ background-color: purple;
+ padding: 10px;
+ text-align: center;
+}
+
 nav a {
-color: white;
-margin: 0 10px;
-text-decoration: none;
+ color: white;
+ margin: 0 15px;
+ text-decoration: none;
+ font-weight: bold;
 }
 
-/* Headings */
-h1 {
-color: #00ff00; /* Simple green text for the title */
-border-bottom: 2px solid #6a0dad; /* A simple purple line under the title */
-padding-bottom: 10px;
-}
-
-h2, h3 {
-color: #6a0dad; /* Purple text for smaller headings */
-}
-
-/* Images */
 img {
-width: 250px;
-height: auto;
-margin: 10px;
-border: 2px solid #6a0dad; /* Just a simple purple border */
+ display: block;
+ margin: 20px auto;
+ border: 3px solid black;
 }
