@@ -1,54 +1,53 @@
-/* Task 3: Background image  */
 body {
- font-family: Arial, sans-serif;
- color: black;
- 
- /* Added CSS to add the background image */
- background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1920&q=80');
- 
- /* Task 3 Requirement: Modify at least one additional background property */
- background-size: cover; 
- background-attachment: fixed; 
- 
- padding: 20px;
+/* Accessibility: Simple, easy-to-read font */
+font-family: Arial, sans-serif;
+/* Accessibility: Larger base font size */
+font-size: 18px;
+color: black;
+background-color: #f4f4f9;
+margin: 0;
+padding: 20px;
 }
 
-/*  Task 1: Css selector  */
-/* Here is the ID Selector  */
-#welcome-title {
- color: darkblue;
- text-align: center;
- border-bottom: 3px solid purple;
-}
-
-/* Here is the Class Selector */
-.featured-box {
- /*  Task 2: css box model */
- width: 70%; /* Width */
- padding: 20px; /* Padding */
- margin: 20px auto; /* Margin (auto centers it) */
- border: 4px solid purple; /* Border */
- 
- background-color: rgba(255, 255, 255, 0.9); /* Tried to make my img see through so you can see the background image behind it */
- border-radius: 10px;
-}
-
-/* Basic styling for nav and images to keep it looking nice */
 nav {
- background-color: purple;
- padding: 10px;
- text-align: center;
+background-color: #4a148c; /* Darker purple for better contrast */
+padding: 15px;
+text-align: center;
 }
 
 nav a {
- color: white;
- margin: 0 15px;
- text-decoration: none;
- font-weight: bold;
+color: white;
+margin: 0 15px;
+text-decoration: underline; /* Accessibility: Links should be underlined so they don't rely on colour alone */
+font-weight: bold;
 }
 
-img {
- display: block;
- margin: 20px auto;
- border: 3px solid black;
+/* Accessibility: Changed from bright green to a high-contrast dark grey */
+header {
+background-color: #333333;
+color: white;
+text-align: center;
+padding: 20px;
+border-bottom: 5px solid #4a148c;
+margin-bottom: 20px;
+}
+
+.content-wrapper {
+max-width: 800px;
+margin: 0 auto;
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+}
+
+.image-container {
+text-align: center;
+margin-top: 20px;
+}
+
+.anime-img {
+width: 100%;
+max-width: 300px;
+height: auto;
+border: 4px solid #4a148c;
 }
