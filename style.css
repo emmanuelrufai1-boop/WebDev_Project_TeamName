@@ -1,53 +1,88 @@
 body {
-/* Accessibility: Simple, easy-to-read font */
-font-family: Arial, sans-serif;
-/* Accessibility: Larger base font size */
-font-size: 18px;
-color: black;
-background-color: #f4f4f9;
-margin: 0;
-padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 nav {
-background-color: #4a148c; /* Darker purple for better contrast */
-padding: 15px;
-text-align: center;
+    background-color: #6a0dad;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
-color: white;
-margin: 0 15px;
-text-decoration: underline; /* Accessibility: Links should be underlined so they don't rely on colour alone */
-font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; 
 }
 
-/* Accessibility: Changed from bright green to a high-contrast dark grey */
-header {
-background-color: #333333;
-color: white;
-text-align: center;
-padding: 20px;
-border-bottom: 5px solid #4a148c;
-margin-bottom: 20px;
+nav a:hover {
+    color: #00ff00; 
 }
 
-.content-wrapper {
-max-width: 800px;
-margin: 0 auto;
-background-color: white;
-padding: 20px;
-border-radius: 10px;
-}
-
-.image-container {
-text-align: center;
-margin-top: 20px;
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .anime-img {
-width: 100%;
-max-width: 300px;
-height: auto;
-border: 4px solid #4a148c;
+    width: 300px;
+    border: 4px solid #6a0dad;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.anime-img:hover {
+    transform: scale(1.05); 
+}
+
+.featured-box {
+    background-color: white;
+    border: 3px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .image-row {
+        flex-wrap: wrap; 
+    }
+    .anime-img {
+        width: 40%; 
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .image-row {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .anime-img {
+        width: 90%; 
+    }
+    
+    .featured-box {
+        width: 90%; 
+    }
 }
